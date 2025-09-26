@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BB College | NSS Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== NSS Header Section ===== -->
+  <header class="header py-6 relative">
+    <div class="container mx-auto flex justify-between items-center">
+      <div><img src="Suku.PNG" alt="Left Logo" class="logo">
+	</div>
+
+
+   <!-- Center Title & Subtitle -->
+            <div class="text-center flex-1 px-2">
+                <h1 class="site-title">National Service Scheme</h1>
+                <p class="site-subtitle">Under the Ministry of Youth Affairs , Govt. of India,<br> RD NSS Kolkata</p>
+                <p class="site-subtitle">B.B College NSS Unit</p>
+                <p class="site-subtitle">Affiliated to Kazi Nazrul University</p>
+            </div>
+
+      <div><img src="logo_right.png" alt="Right Logo" class="logo"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="container mx-auto mt-6">
+      <nav>
+        <ul class="nav-menu flex flex-wrap justify-center space-x-4 sm:space-x-6 font-medium">
+          <li><a href="index.html" class="nav-link">Dashboard</a></li>
+          <li><a href="registration.html" class="nav-link">Registration</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="notice.html" class="nav-link">Notices</a></li>
+          <li><a href="index.html#officers" class="nav-link">Officers</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html#collaboration" class="nav-link">Collaboration</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Gallery Section ===== -->
+  <section class="py-16 bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 section-title">NSS Gallery</h2>
+
+      <!-- Album Filter -->
+      <div class="flex justify-center mb-10">
+        <div class="bg-white rounded-lg shadow p-1 flex flex-wrap">
+          <button class="tab active" data-album="all">All Albums</button>
+
+	  <button class="tab" data-album="NSS DAY 2025">NSS DAY 2025</button>
+          <button class="tab" data-album="cleanliness">SWACHHATA HI SEVA</button>
+          <button class="tab" data-album="blood-donation">Blood Donation</button>
+          <button class="tab" data-album="awareness">Awareness Camp</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="gallery-grid">
+        <!-- Photos will be loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">NSS Portal</h3>
+          <p class="mb-4">National Service Scheme - Not Me, But You. Empowering students through community service.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-2xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-2xl"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-2xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-2xl"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="footer-link">Dashboard</a></li>
+            <li><a href="index.html#registration" class="footer-link">Registration</a></li>
+            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+            <li><a href="events.html" class="footer-link">Events</a></li>
+            <li><a href="notice.html" class="footer-link">Notices</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+              <span>NSS Unit, College Campus, City - 123456</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-2"></i>
+              <span>+91 98765 43210</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-2"></i>
+              <span>nss@college.edu</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+          <p class="mb-4">Subscribe to our newsletter for updates on events and activities.</p>
+          <form>
+            <div class="flex">
+              <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full">
+              <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r-lg">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 pt-6 flex items-center justify-center space-x-2">
+        
+        <p>&copy; Sumanta Ghosh, Department Of Physics .All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Gallery Script ===== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const photos = [
+        
+         {src: "gallery/NSS1.jpg", caption: "NSS DAY 2025", album: "NSS DAY 2025"},
+	{src: "gallery/NSS2.jpg", caption: "UNIT- 2 MENTOR", album: "NSS DAY 2025"},
+	{src: "gallery/NSS3.jpg", caption: "DRAMA PLAYED BY OUR VOLENTEER", album: "NSS DAY 2025"},
+	{src: "gallery/NSS4.jpg", caption: "BELOVED PRINCIPAL SIR", album: "NSS DAY 2025"},
+	{src: "gallery/NSS5.jpg", caption: "ANCHORING", album: "NSS DAY 2025"},
+	{src: "gallery/NSS6.jpg", caption: "UNIT-1 MENTOR", album: "NSS DAY 2025"},
+	{src: "gallery/NSS7.jpg", caption: "CELEBRATION", album: "NSS DAY 2025"},
+	{src: "gallery/NSS8.jpg", caption: "CELEBRATION", album: "NSS DAY 2025"},
+	{src: "gallery/NSS9.jpg", caption: "CAKE CUTTING", album: "NSS DAY 2025"},
+	{src: "gallery/NSS10.jpg", caption: "OUR SENIOR VOLENTEER", album: "NSS DAY 2025"},
+	{src: "gallery/NSS11.jpg", caption: "MENTOR MAM", album: "NSS DAY 2025"},
+	{src: "gallery/NSS12.jpg", caption: "OUR SENIOR VOLENTEER", album: "NSS DAY 2025"},
+	{src: "gallery/NSS13.jpg", caption: "OUR SENIOR VOLENTEER", album: "NSS DAY 2025"},
+	{src: "gallery/NSS14.jpg", caption: "AWARD CEREMONY", album: "NSS DAY 2025"},
+	{src: "gallery/NSS15.jpg", caption: "AWARD CEREMONY", album: "NSS DAY 2025"},
+	{src: "gallery/NSS16.jpg", caption: "OUR BELOVED TEACHERS", album: "NSS DAY 2025"},
+	{src: "gallery/NSS17.jpg", caption: "OUR VOLENTEER", album: "NSS DAY 2025"},
+	{src: "gallery/NSS18.jpg", caption: "OUR VOLENTEER", album: "NSS DAY 2025"},
+	{src: "gallery/NSS19.jpg", caption: "OUR VOLENTEER", album: "NSS DAY 2025"},
+	{src: "gallery/NSS20.jpg", caption: "PORIMOL SIR", album: "NSS DAY 2025"},
+	{src: "gallery/NSS21.jpg", caption: "AWARD CEREMONY", album: "NSS DAY 2025"},
+	{src: "gallery/NSS22.jpg", caption: "LAKSHYA GEET", album: "NSS DAY 2025"},
+	{src: "gallery/NSS23.jpg", caption: "SHANOLY MAM", album: "NSS DAY 2025"},
+	{src: "gallery/NSS24.jpg", caption: "RITWIK SIR", album: "NSS DAY 2025"},
+	{src: "gallery/NSS25.jpg", caption: "ANIMESH SIR", album: "NSS DAY 2025"},
+	{src: "gallery/clean1.jpg", caption: "Cleanliness Drive", album: "cleanliness"},
+        {src: "gallery/clean2.jpg", caption: "Volunteers Cleaning Surrounding", album: "cleanliness"},
+        {src: "gallery/tree1.jpg", caption: "Tree Plantation", album: "tree-plantation"},
+        {src: "gallery/blood1.jpg", caption: "Blood Donation", album: "blood-donation"},
+        {src: "gallery/awareness1.jpg", caption: "Awareness Camp", album: "awareness"},
+      ];
+
+      const galleryGrid = document.getElementById("gallery-grid");
+
+      photos.forEach(photo => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.setAttribute("data-album", photo.album);
+
+        card.innerHTML = `
+          <div class="gallery-item">
+            <img src="${photo.src}" alt="${photo.caption}">
+            <div class="gallery-caption">${photo.caption}</div>
+          </div>
+          <div class="p-4 flex justify-between items-center">
+            <span class="text-gray-700">${photo.caption}</span>
+            <div class="flex space-x-3">
+              <a href="${photo.src}" target="_blank" class="text-blue-600"><i class="fas fa-eye"></i></a>
+              <a href="${photo.src}" download class="text-green-600"><i class="fas fa-download"></i></a>
+            </div>
+          </div>
+        `;
+        galleryGrid.appendChild(card);
+      });
+
+      // Album filtering
+      document.querySelectorAll(".tab[data-album]").forEach(tab => {
+        tab.addEventListener("click", function () {
+          document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+          this.classList.add("active");
+
+          const album = this.getAttribute("data-album");
+          document.querySelectorAll("#gallery-grid .card").forEach(item => {
+            if (album === "all" || item.getAttribute("data-album") === album) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BB College | NSS Notices</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== NSS Header Section ===== -->
+  <header class="header py-6 relative">
+    <div class="container mx-auto flex justify-between items-center">
+      <div><img src="Suku.png" alt="Left Logo" class="logo"></div>
+      <!-- Center Title & Subtitle -->
+            <div class="text-center flex-1 px-2">
+                <h1 class="site-title">National Service Scheme</h1>
+                <p class="site-subtitle">Under the Ministry of Youth Affairs , Govt. of India,<br> RD NSS Kolkata</p>
+                <p class="site-subtitle">B.B College NSS Unit</p>
+                <p class="site-subtitle">Affiliated to Kazi Nazrul University</p>
+            </div>
+
+      <div><img src="logo_right.png" alt="Right Logo" class="logo"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="container mx-auto mt-6">
+      <nav>
+        <ul class="nav-menu flex flex-wrap justify-center space-x-4 sm:space-x-6 font-medium">
+          <li><a href="index.html" class="nav-link">Dashboard</a></li>
+          <li><a href="registration.html" class="nav-link">Registration</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="notice.html" class="nav-link active">Notices</a></li>
+          <li><a href="index.html#officers" class="nav-link">Officers</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html#collaboration" class="nav-link">Collaboration</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Notices Section ===== -->
+  <section class="py-16 bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 section-title">NSS Notices</h2>
+
+      <!-- Notices Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="notice-grid">
+        <!-- Notices will load dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container mx-auto px-4">
+      <div class="border-t border-gray-700 pt-6 flex items-center justify-center space-x-2">
+        <img src="n.png" alt="Logo" class="w-6 h-6 object-contain">
+        <p>&copy; Sumanta Ghosh, Department Of Physics .All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Notices Script ===== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const notices = [
+        {
+          src: "notices/notice1.jpg",
+          caption: "Blood Donation Camp - Volunteers Required",
+          date: "15 October 2023",
+          form: "https://forms.gle/example1"  // Google Form link
+        },
+        {
+          src: "notices/notice2.jpg",
+          caption: "Tree Plantation Drive Results",
+          date: "8 October 2023",
+          form: "" // No registration form
+        },
+        {
+          src: "notices/notice3.jpg",
+          caption: "NSS Annual Meeting Schedule",
+          date: "1 October 2023",
+          form: "https://forms.gle/example2"
+        },
+      ];
+
+      const noticeGrid = document.getElementById("notice-grid");
+
+      notices.forEach(notice => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+          <div class="gallery-item">
+            <img src="${notice.src}" alt="${notice.caption}">
+            <div class="gallery-caption">${notice.caption}</div>
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold">${notice.caption}</h3>
+            <p class="text-gray-600 text-sm">Published on: ${notice.date}</p>
+            <div class="flex justify-between items-center">
+              <div class="flex space-x-3">
+                <a href="${notice.src}" target="_blank" class="text-blue-600"><i class="fas fa-eye"></i></a>
+                <a href="${notice.src}" download class="text-green-600"><i class="fas fa-download"></i></a>
+              </div>
+              ${notice.form 
+                ? `<a href="${notice.form}" target="_blank" class="bg-blue-600 text-white text-sm px-3 py-1 rounded hover:bg-blue-700">Register</a>` 
+                : `<span class="text-gray-400 text-sm">Registration Closed</span>`}
+            </div>
+          </div>
+        `;
+
+        noticeGrid.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>

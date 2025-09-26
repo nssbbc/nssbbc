@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB College | NSS Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== NSS Header Section ===== -->
+    <header class="header py-6 relative">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Left Logo -->
+            <div>
+                <img src="Suku.png" alt="Left Logo" class="logo">
+            </div>
+
+ <!-- Center Title & Subtitle -->
+            <div class="text-center flex-1 px-2">
+                <h1 class="site-title">National Service Scheme</h1>
+                <p class="site-subtitle">Under the Ministry of Youth Affairs , Govt. of India,<br> RD NSS Kolkata</p>
+                <p class="site-subtitle">B.B College NSS Unit</p>
+                <p class="site-subtitle">Affiliated to Kazi Nazrul University</p>
+            </div>
+
+
+            <!-- Right Logo -->
+            <div>
+                <img src="logo_right.png" alt="Right Logo" class="logo">
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="container mx-auto mt-6">
+            <nav>
+                <ul class="nav-menu flex flex-wrap justify-center space-x-4 sm:space-x-6 font-medium">
+                    <li><a href="index.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="registration.html" class="nav-link">Registration</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="events.html" class="nav-link active">Events</a></li>
+                    <li><a href="notice.html" class="nav-link">Notices</a></li>
+                    <li><a href="index.html#officers" class="nav-link">Officers</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li><a href="index.html#collaboration" class="nav-link">Collaboration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Events Page Content -->
+    <section class="py-16 bg-gray-50 min-h-screen">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">NSS Events</h2>
+            
+            <!-- Event Filter -->
+            <div class="flex justify-center mb-10">
+                <div class="bg-white rounded-lg shadow p-1 flex">
+                    <button class="tab active" data-category="all">All Events</button>
+                    <button class="tab" data-category="upcoming">Upcoming</button>
+                    <button class="tab" data-category="past">Past Events</button>
+                </div>
+            </div>
+            
+                       
+            <!-- Events List -->
+            <div class="space-y-8" id="events-container">
+                <!-- Events will be dynamically categorized here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <!-- Footer content same as index.html -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">NSS Portal</h3>
+                    <p class="mb-4">National Service Scheme - Not Me, But You. Empowering students through community service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="footer-link">Dashboard</a></li>
+                        <li><a href="index.html#registration" class="footer-link">Registration</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="events.html" class="footer-link">Events</a></li>
+                        <li><a href="notice.html" class="footer-link">Notices</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>NSS Unit, College Campus, City - 123456</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-2"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>nss@college.edu</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for updates on events and activities.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full">
+                            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r-lg">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex items-center justify-center space-x-2">
+                <img src="n.png" alt="Logo" class="w-6 h-6 object-contain">
+                <p>&copy; Sumanta Ghosh, Department Of Physics .All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample events data
+        const events = [
+            {
+                id: 1,
+                title: "Blood Donation Camp",
+                date: "2023-10-25",
+                time: "10:00",
+                location: "College Auditorium",
+                description: "Annual blood donation camp in collaboration with Red Cross Society. All volunteers are requested to participate and donate blood to help those in need.",
+                image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                status: "upcoming"
+            },
+            {
+                id: 2,
+                title: "Cleanliness Drive",
+                date: "2023-10-02",
+                time: "09:00",
+                location: "College Campus & Surrounding Areas",
+                description: "Cleanliness drive on Gandhi Jayanti. We'll be cleaning the campus and surrounding areas. Gloves and masks will be provided.",
+                image: "https://images.unsplash.com/photo-1549918864-48ac978761a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                status: "past"
+            },
+            {
+                id: 3,
+                title: "Tree Plantation Drive",
+                date: "2023-06-05",
+                time: "08:00",
+                location: "College Ground",
+                description: "Tree plantation drive on World Environment Day. We aim to plant 500 saplings across the campus.",
+                image: "https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                status: "past"
+            },
+            {
+                id: 4,
+                title: "Health Awareness Camp",
+                date: "2023-11-15",
+                time: "11:00",
+                location: "Community Hall",
+                description: "Health awareness camp for local community. We'll be providing basic health checkups and spreading awareness about hygiene.",
+                image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                status: "upcoming"
+            },
+            {
+                id: 5,
+                title: "Youth Leadership Workshop",
+                date: "2023-12-10",
+                time: "10:00",
+                location: "Seminar Hall",
+                description: "2-day workshop on leadership skills development for NSS volunteers. Expert speakers will conduct sessions.",
+                image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                status: "upcoming"
+            }
+        ];
+
+        // Function to render events
+        function renderEvents(category = 'all') {
+            const container = document.getElementById('events-container');
+            container.innerHTML = '';
+            
+            // Sort events by date (newest first for past, chronological for upcoming)
+            const sortedEvents = [...events].sort((a, b) => {
+                if (category === 'past') {
+                    return new Date(b.date) - new Date(a.date);
+                } else {
+                    return new Date(a.date) - new Date(b.date);
+                }
+            });
+            
+            sortedEvents.forEach(event => {
+                if (category === 'all' || event.status === category) {
+                    const eventDate = new Date(event.date);
+                    const formattedDate = eventDate.toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                    });
+                    
+                    const eventElement = document.createElement('div');
+                    eventElement.className = 'card p-6';
+                    eventElement.innerHTML = `
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/3">
+                                <img src="${event.image}" alt="${event.title}" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <div class="md:w-2/3">
+                                <div class="flex justify-between items-start mb-4">
+                                    <h3 class="text-xl font-semibold">${event.title}</h3>
+                                    <span class="px-3 py-1 rounded-full text-sm ${event.status === 'upcoming' ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'}">
+                                        ${event.status === 'upcoming' ? 'Upcoming' : 'Past Event'}
+                                    </span>
+                                </div>
+                                <p class="text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2"></i>${formattedDate}</p>
+                                <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i>${event.time}</p>
+                                <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2"></i>${event.location}</p>
+                                <p class="mb-4">${event.description}</p>
+                                ${event.status === 'upcoming' ? 
+                                    `<button class="btn btn-primary">Register for Event</button>` : 
+                                    `<button class="btn btn-secondary">View Photos</button>`
+                                }
+                            </div>
+                        </div>
+                    `;
+                    
+                    container.appendChild(eventElement);
+                }
+            });
+        }
+
+        // Initial render
+        renderEvents();
+
+        // Event filtering
+        document.querySelectorAll('.tab[data-category]').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.getAttribute('data-category');
+                renderEvents(category);
+            });
+        });
+
+        // Event form submission
+        document.getElementById('event-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Event would be created here. In a real application, this would save the event to a database.');
+            this.reset();
+        });
+
+        // Update event status based on current date
+        function updateEventStatus() {
+            const today = new Date();
+            events.forEach(event => {
+                const eventDate = new Date(event.date);
+                event.status = eventDate >= today ? 'upcoming' : 'past';
+            });
+        }
+
+        // Initialize
+        updateEventStatus();
+        renderEvents();
+    </script>
+</body>
+</html>
