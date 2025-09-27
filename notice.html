@@ -54,7 +54,7 @@
   </section>
 
   <!-- ===== Footer ===== -->
-  <footer class="footer">
+    <footer class="footer">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
@@ -121,6 +121,24 @@
 
   <!-- ===== Notices Script ===== -->
   <script>
+
+
+
+let lastScrollY = window.scrollY;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function() {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        header.classList.add('hidden');
+    } else {
+        header.classList.remove('hidden');
+    }
+    
+    lastScrollY = currentScrollY;
+});
+
     document.addEventListener("DOMContentLoaded", function () {
       const notices = [
         {
