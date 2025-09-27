@@ -22,6 +22,13 @@ body {
     background-color: #f8fafc;
     color: #334155;
     overflow-x: hidden;
+   padding-top: 180px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 200px;
+    }
 }
 
 .header {
@@ -32,12 +39,25 @@ body {
     top: 0;
     z-index: 100;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
+.header.hidden {
+    transform: translateY(-100%);
+}
+
+
+
+/* Current problematic code */
 .logo {
-    animation: pulse 2s infinite;
+    width: 80px;
+    height: 80px;
 }
-
 @keyframes pulse {
     0% {
         transform: scale(1);
