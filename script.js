@@ -1,3 +1,24 @@
+// Hide header on scroll
+let lastScrollY = window.scrollY;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function() {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        header.classList.add('hidden');
+    } else {
+        header.classList.remove('hidden');
+    }
+    
+    lastScrollY = currentScrollY;
+});
+
+
+
+
+
+
 // ==================== PAGE NAVIGATION ====================
 function showPage(pageId) {
   document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
